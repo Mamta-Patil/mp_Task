@@ -38,26 +38,27 @@ export function getVisaSuggestion(data) {
     ];
   
     // Visa-free entry examples
-    const visaFreePairs = [
-      { nationality: 'USA', destination: 'Canada' },
-      { nationality: 'Germany', destination: 'Japan' },
-    ];
-    const isVisaFree = visaFreePairs.some(
-      (pair) =>
-        pair.nationality.toLowerCase() === nationality.toLowerCase() &&
-        pair.destination.toLowerCase() === destination.toLowerCase()
-    );
-    if (isVisaFree && durationDays <= 90) {
-      return {
-        visaType: 'Visa-Free Entry',
-        criteria: [
-          'Valid passport',
-          'Proof of onward travel',
-          'Sufficient funds',
-          `No work or study in ${destination}`,
-        ],
-      };
-    }
+    // const visaFreePairs = [
+    //   { nationality: 'USA', destination: 'Canada' },
+    //   { nationality: 'Germany', destination: 'Japan' },
+    // ];
+    // const isVisaFree = visaFreePairs.some(
+    //   (pair) =>
+    //     pair.nationality.toLowerCase() === nationality.toLowerCase() &&
+    //     pair.destination.toLowerCase() === destination.toLowerCase()
+    // );
+
+    // if (isVisaFree && durationDays <= 90) {
+    //   return {
+    //     visaType: 'Visa-Free Entry',
+    //     criteria: [
+    //       'Valid passport',
+    //       'Proof of onward travel',
+    //       'Sufficient funds',
+    //       `No work or study in ${destination}`,
+    //     ],
+    //   };
+    // }
   
     const countrySpecific = {
       USA: {

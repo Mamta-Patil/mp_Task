@@ -1,26 +1,3 @@
-//     'use client';
-// import { useState } from 'react';
-
-// export default function UploadSection() {
-//   const [files, setFiles] = useState([]);
-
-//   const handleUpload = (e) => {
-//     setFiles([...files, ...Array.from(e.target.files)]);
-//   };
-
-//   return (
-//     <div className="mt-6">
-//       <h3 className="font-semibold mb-2">Upload Your Documents</h3>
-//       <input type="file" multiple onChange={handleUpload} className="block mb-2" />
-//       <ul className="text-sm text-gray-600">
-//         {files.map((file, idx) => <li key={idx}>{file.name}</li>)}
-//       </ul>
-//     </div>
-//   );
-// }
-
-
-
 'use client';
 import { useState } from 'react';
 
