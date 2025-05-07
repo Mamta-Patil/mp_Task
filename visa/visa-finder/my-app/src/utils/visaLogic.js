@@ -161,6 +161,7 @@ export function getVisaSuggestion(data) {
           'Payment arrangements',
           'Accommodation'
         );
+        
       } else {
         visaType = 'General Visa';
         criteria.push('Purpose-specific documents');
