@@ -30,6 +30,23 @@ import "./globals.css";
 
 // import '../styles/globals.css';
 
+// export const metadata = {
+//   title: 'Visa Finder Tool',
+//   description: 'Find the right visa based on your profile',
+// };
+
+// export default function RootLayout({ children }) {
+//   return (
+//     <html lang="en">
+//       <body className="bg-gray-50 text-gray-800 font-sans">
+//         <main className="min-h-screen p-6">{children}</main>
+//       </body>
+//     </html>
+//   );
+// }
+
+
+
 export const metadata = {
   title: 'Visa Finder Tool',
   description: 'Find the right visa based on your profile',
