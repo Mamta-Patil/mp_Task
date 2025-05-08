@@ -104,7 +104,22 @@
 
 
 
+// import ChecklistForm from '../components/ChecklistForm';
+
+// export default function Home() {
+//   return (
+//     <div>
+//       {/* <h1 className="text-3xl font-bold mb-4">Visa Checklist Generator</h1> */}
+//       <ChecklistForm />
+//     </div>
+//   );
+// }
+
+
 import ChecklistForm from '../components/ChecklistForm';
+
+// Force dynamic rendering to skip prerendering
+export const dynamic = 'force-dynamic';
 
 export default function Home() {
   return (
