@@ -98,6 +98,22 @@
 
 
 
+// import { Suspense } from 'react';
+// import ResultsDisplay from '@/components/ResultsDisplay';
+
+// // Force dynamic rendering as a fallback to ensure no prerendering
+// export const dynamic = 'force-dynamic';
+
+// export default function ResultsPage() {
+//   return (
+//     <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading visa suggestions...</div>}>
+//       <ResultsDisplay />
+//     </Suspense>
+//   );
+// }
+
+
+
 import { Suspense } from 'react';
 import ResultsDisplay from '@/components/ResultsDisplay';
 
@@ -111,3 +127,21 @@ export default function ResultsPage() {
     </Suspense>
   );
 }
+
+
+
+// import { Suspense } from 'react';
+// import ResultsDisplay from '@/components/ResultsDisplay';
+
+// // Ensure the page is treated as dynamic by disabling static generation
+// export async function generateStaticParams() {
+//   return [];
+// }
+
+// export default function ResultsPage() {
+//   return (
+//     <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading visa suggestions...</div>}>
+//       <ResultsDisplay />
+//     </Suspense>
+//   );
+// }
