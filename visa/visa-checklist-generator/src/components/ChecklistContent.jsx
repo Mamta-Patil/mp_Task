@@ -2,8 +2,6 @@
 import { useSearchParams } from 'next/navigation';
 import ChecklistResult from './ChecklistResult';
 import { generateChecklist } from '@/utils/checklistLogic';
-// import { generateChecklist } from '../../utils/checklistLogic';
-// import ChecklistResult from '../../components/ChecklistResult';
 
 export default function ChecklistContent() {
   const searchParams = useSearchParams();
